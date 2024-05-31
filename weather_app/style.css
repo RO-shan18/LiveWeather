@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: #a1a1a1;
+}
+
+.navbar{
+    background-color: #272829;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 13px;
+}
+
+.contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain .img{
+    z-index: 1;
+    background-color: gray;
+    padding: 4px 8px 6px 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+.navbar input{
+    padding: 10px 23px 6px 13px;
+    border-radius: 7px;
+}
+
+.navbar p{
+    font-size: 23px;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+}
+
+.navbar .image{
+    width:40px;
+    background-color:#272829;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    color: gray;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+    text-align: center;
+}
+
+.condition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2dede;
+    width: 50%;
+    margin: auto;
+    border-radius: 13px;
+    box-shadow: 19px 11px 9px gray;
+}
+
+.condition .png{
+    width: 227px;
+}
+
+.condition .ctyname{
+    padding: 28px 0px;
+    font-size: 22px;
+    font-family:  Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+    color: #b7b774;
+    
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    font-family:  Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+    color: #b7b774;
+    justify-content: center;
+    gap:10px;
+}
+
+.condition .contain2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.capsules{
+    display: flex;
+    gap: 117px;
+}
+
+.condition h1{
+    color: #767676;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+    position: relative;
+    top: 7px;
+    right: 120px;
+    font-size: 28px;
+}
+
+.detailinfo img{
+    width:10%;
+}
+
+.detailinfo h2{
+    color: #767676;
+}
+
+.condition .info{
+    display: flex;
+    padding-top: 23px;
+}
+
+.condition .detailinfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    padding: 43px 16px;
+}
+
+.condition .windspd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 43px 16px;
+}
+
+.windspd img{
+    width:10%;
+}
+
+.windspd h2{
+    color: #767676;
+}
+
+
+@media (max-width:1050px){
+    .condition{
+        width:75%;
+    }
+
+    .info img{
+        width:13%;
+    }
+}
+
+@media (max-width:700px){
+    .capsules{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+    }
+
+    .condition h1{
+        right:87px;
+    }
+
+    .info img{
+        width:15%;
+    }
+
+}
+
+@media (max-width:569px){
+    .condition h1{
+        right:0px;
+    }
+
+    .temp{
+        padding-left:20px;
+        padding-top: 10px;
+    }
+
+    .info img{
+        width:20%;
+    }
+
+}
+
+@media(max-width:400px){
+    .info img{
+        width:23px;
+    }
+
+     .info{
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .condition .detailinfo{
+        padding:14px 16px;
+     }
+
+     .condition .windspd{
+        padding:14px 15px;
+     }
+}
